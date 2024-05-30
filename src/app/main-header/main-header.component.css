@@ -1,0 +1,81 @@
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 200; /* Adjust the z-index if necessary */
+  top: 0;
+  left: 0;
+  /* Optionally, set a background color */
+  /* Add any other styles you need */
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  margin-top: 0px;
+
+  margin-top: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* .box-header {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: black;
+  overflow: auto;
+  margin-top: 43px;
+}  */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: black; */
+  background: linear-gradient(to bottom, rgba(1, 1, 1, 1), rgba(0, 0, 0, 0));
+  z-index: 500;
+  padding-top: 0px;
+}
+
+.nav-links {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.navbar a {
+  color: white;
+  font-weight: 10;
+  text-decoration: none;
+  font-size: 100%;
+  margin-right: 20px;
+}
+
+.navbar a:hover{
+  color: white;
+  background-color: #007BFF;
+  text-decoration: none;
+  font-size: 100%;
+  margin-right: 20px;
+}
+
+/* .box-header {
+  border: 2px solid black;
+  padding: 10px;
+  background-color: black;
+  overflow: auto;
+  margin-top: 28px;
+} */

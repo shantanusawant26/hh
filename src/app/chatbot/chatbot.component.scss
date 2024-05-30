@@ -1,0 +1,348 @@
+// .chatbot-container {
+//     max-width: 400px;
+//     margin: 20px auto;
+//     border: 1px solid #ccc;
+//     border-radius: 8px;
+//     display: flex;
+//     flex-direction: column;
+//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   }
+  
+//   .chat-window {
+//     flex-grow: 1;
+//     padding: 10px;
+//     overflow-y: auto;
+//     background-color: #f9f9f9;
+//     border-bottom: 1px solid #ccc;
+//   }
+  
+//   .input-area {
+//     display: flex;
+//     padding: 10px;
+//     background-color: #fff;
+//   }
+  
+//   input {
+//     flex-grow: 1;
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 4px;
+//     margin-right: 10px;
+//   }
+  
+//   button {
+//     padding: 10px 20px;
+//     background-color: #2980b9;
+//     color: #fff;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//   }
+  
+//   button:hover {
+//     background-color: #3498db;
+//   }
+  
+//   .user-message {
+//     text-align: right;
+//   }
+  
+//   .bot-message {
+//     text-align: left;
+//   }
+  
+//   .message {
+//     display: inline-block;
+//     padding: 10px;
+//     border-radius: 4px;
+//     margin: 5px 0;
+//     max-width: 80%;
+//   }
+  
+//   .user-message .message {
+//     background-color: #2980b9;
+//     color: #fff;
+//   }
+  
+//   .bot-message .message {
+//     background-color: #ecf0f1;
+//     color: #333;
+//   }
+  
+
+// #chat {
+//   width: 400px;
+//   margin: 50px auto;
+//   border: 1px solid #ccc;
+//   padding: 20px;
+//   border-radius: 5px;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+// }
+// .message {
+//   margin: 10px 0;
+//   padding: 10px;
+//   border-radius: 5px;
+// }
+// .user-message {
+//   background-color: #e0f7fa;
+//   text-align: right;
+// }
+// .bot-message {
+//   background-color: #f1f8e9;
+// }
+// #messageInput {
+//   width: calc(100% - 50px);
+//   padding: 10px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+// }
+// #sendButton {
+//   padding: 10px;
+//   border: none;
+//   background-color: #007bff;
+//   color: white;
+//   border-radius: 5px;
+// }
+
+
+
+  /* chatbot.component.css */
+
+.chat-icon {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  background-color: #007bff;
+  // color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+.chat-icon img{
+  width: 60px;
+  height: 60px;
+}
+.chat-icon:hover {
+  transform: scale(1.1);
+}
+
+// .chat-container {
+//   position: fixed;
+//   bottom: 100px;
+//   right: 20px;
+//   background-color: #fff;
+//   // width: 300px;
+//   // height: auto;
+//   border-radius: 10px;
+//   // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+//   overflow: hidden;
+// }
+
+
+// #chat {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+//   width: 100%;
+// }
+
+// #messagesContainer {
+//   flex: 1; /* This will make the container take up available space */
+//   overflow-y: auto; /* Adds vertical scroll when content overflows */
+//   max-height: 100px; /* Adjust based on your needs */
+//   border: 1px solid #ccc; /* Optional: add a border for better visibility */
+//   padding: 10px;
+//   box-sizing: border-box;
+// }
+
+// .message {
+//   margin-bottom: 10px;
+//   padding: 10px;
+//   border-radius: 5px;
+// }
+
+// .user-message {
+//   background-color: #e1ffc7;
+//   text-align: right;
+// }
+
+// .bot-message {
+//   background-color: #f1f1f1;
+//   text-align: left;
+// }
+
+// #messageInput {
+//   width: calc(100% - 110px); /* Adjust width to fit with button */
+//   padding: 10px;
+//   margin: 10px 0;
+//   box-sizing: border-box;
+// }
+
+// #sendButton {
+//   padding: 10px;
+//   margin: 10px 0;
+// }
+
+
+
+
+
+// .chat-container {
+//   position: fixed; /* Position fixed to float the chat window */
+//   bottom: 20px; /* Adjust as needed to place the chat container */
+//   right: 20px; /* Adjust as needed to place the chat container */
+//   width: 300px; /* Fixed width for the chat container */
+//   height: 400px; /* Fixed height for the chat container */
+//   border: 1px solid #ccc; /* Optional: border for the container */
+//   border-radius: 10px; /* Optional: rounded corners */
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+//   background-color: #fff; /* Background color */
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// #chat {
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+// }
+
+// #messagesContainer {
+//   flex: 1; /* This allows the messages container to take up available space */
+//   overflow-y: auto; /* Adds vertical scrolling when content overflows */
+//   padding: 10px;
+//   box-sizing: border-box;
+// }
+
+// .message {
+//   margin-bottom: 10px;
+//   padding: 10px;
+//   border-radius: 5px;
+// }
+
+// .user-message {
+//   background-color: #e1ffc7;
+//   text-align: right;
+// }
+
+// .bot-message {
+//   background-color: #f1f1f1;
+//   text-align: left;
+// }
+
+// #messageInput {
+//   width: calc(100% - 90px); /* Adjust width to fit with button */
+//   padding: 10px;
+//   box-sizing: border-box;
+//   margin: 10px 5px 10px 10px; /* Adjust margins as needed */
+// }
+
+// #sendButton {
+//   padding: 10px;
+//   margin: 10px 10px 10px 0; /* Adjust margins as needed */
+// }
+// .chat-container-main{
+//   position: fixed; /* Position fixed to float the chat window */
+//   bottom: 100px; /* Adjust as needed to place the chat container */
+//   right: 80px; /* Adjust as needed to place the chat container */
+//   width: 300px; /* Fixed width for the chat container */
+//   height: 400px; /* Fixed height for the chat container */
+//   border: 1px solid #ccc; /* Optional: border for the container */
+//   border-radius: 10px; /* Optional: rounded corners */
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+//   background-color: #fff; /* Background color */
+//   display: flex;
+//   flex-direction: column;
+//   overflow: hidden; /* Prevent overflow of inner elements */
+// }
+
+.chat-container {
+  position: fixed; /* Position fixed to float the chat window */
+  bottom: 100px; /* Adjust as needed to place the chat container */
+  right: 80px; /* Adjust as needed to place the chat container */
+  width: 300px; /* Fixed width for the chat container */
+  height: 400px; /* Fixed height for the chat container */
+  border: 1px solid #ccc; /* Optional: border for the container */
+  border-radius: 10px; /* Optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow for better visibility */
+  background-color: #fff; /* Background color */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent overflow of inner elements */
+}
+// #chat-bot-title{
+  // align-items: center;
+//   text-align: center;
+//   color: #007bff;
+//   font-size: 30px;
+//   width: auto;
+//   height: 100px;
+//   border:  1px solid;
+// }
+#chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+
+#messagesContainer {
+  flex: 1; /* This allows the messages container to take up available space */
+  overflow-y: auto; /* Adds vertical scrolling when content overflows */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+
+#chatHeader {
+  text-align: center; /* Center the text */
+  font-weight: bold; /* Make the text bold */
+  padding: 10px;
+  background-color: #f1f1f1; /* Optional: background color for the header */
+  border-bottom: 1px solid #ccc; /* Optional: border to separate header from messages */
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.user-message {
+  background-color: #e1ffc7;
+  text-align: right;
+}
+
+.bot-message {
+  background-color: #f1f1f1;
+  text-align: left;
+}
+
+#inputContainer {
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc; /* Optional: border to separate messages and input */
+}
+
+#messageInput {
+  flex: 1; /* This allows the input to take up available space */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#sendButton {
+  padding: 10px;
+  margin-left: 10px; /* Space between input and button */
+}
+
+

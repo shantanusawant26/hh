@@ -1,0 +1,418 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .popup {
+  position: fixed;
+  top: 7.5%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 50%;
+  height: 40px;
+  background-color: #333;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex; 
+  justify-content: space-between; 
+  z-index: 1000;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.popup.show {
+  transform: translate(-50%, 11%);
+  opacity: 1;
+}
+
+.popup h2 {
+  margin: 0;
+  color: white;
+}
+
+.send-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 1px 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  width: 30px;
+  margin-right: 7px;
+}
+
+/* /////////////// */
+
+.image-contai {
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+  position: relative;
+}
+
+.images-wrapp {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.images-wrapp.transition-disabled {
+  transition: none;
+}
+
+.images-wrapp img {
+  width: 100%;
+  height: 600px;
+  flex: 0 0 100%;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px; 
+  height: 50px; 
+  border: none;
+  padding: 0; 
+  cursor: pointer;
+  background-color: blue; 
+  backdrop-filter: blur(10px); 
+  color: white;
+  border-radius: 50%; 
+  
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+/* About us */
+
+
+.box-about-us {
+  position: relative;
+  margin-bottom: 10px; 
+  max-height: 570px; 
+  overflow: hidden; 
+}
+
+
+.box-about-us .content {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  color: black;
+  z-index: 1;
+  left: 10%; 
+}
+
+.box-about-us h1 {
+  font-size: 70px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  top: 15%;
+}
+
+.box-about-us p {
+  
+  font-weight: 100;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  width: calc(50% - 40px); 
+}
+
+.box-about-us .btn-1 {
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.box-about-us .btn-1:hover {
+  background-color: #0056b3;
+}
+
+.box-about-us img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* Courses */
+
+.pt-5 {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.mb-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  
+  text-align: center; 
+}
+
+
+/* Image */
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Services section */
+.h2 {
+  text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+   
+}
+#services{
+  margin-top: 25px;
+}
+
+.box-carousel {
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  border: black;
+  border-width: 15px;
+}
+.box-wrapper {
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.box {
+  position: relative;
+  flex: 0 0 auto;
+  width: 250px;
+  height: 300px;
+  margin-right: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+}
+
+.box p {
+  font-size: 15px;
+}
+
+.h1 {
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 0;
+  /* position: relative; */
+  background: linear-gradient(#007bff, #0056b3);
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  height: 80px;
+}
+.box-content {
+  padding: 20px;
+}
+.read-more {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color:  #007bff;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:  #007bff;
+}
+
+/* information */
+.info{
+  margin: 100px auto;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* border: 2px solid red; */
+}
+.info> .btn-8{
+  background-color: #007BFF;
+  color: white;
+ margin-top: 70px;
+  border-radius: 5px;
+  height: 33px;
+  border: none;
+  width: 120px;
+  margin-bottom: 1px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.3);
+}
+.info> h2{
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.logo-container {
+  width: 70%;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+.logos {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+  
+}
+
+.logos img {
+  height: 100px; /* Adjust as needed */
+  margin: 10px 40px ;
+  display: inline-block;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+div .Courses{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+/* Feedback */
+
+.box-carousel-1 {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: relative;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.arrow {
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+  margin: 5px 5px;
+  padding-bottom: 7px; 
+  background-color: #007bff;
+  color: white;
+  width: 100px;
+  height: 20px;
+  border-radius: 5px;
+  bottom: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.box-wrapper-1 {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 80%;
+  justify-content: center;
+}
+
+.boxx {
+  width: 300px;
+  height: 230px;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.h3 {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box-content-1 {
+  padding: 20px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* .h2-courses {
+  text-align: center;
+  font-weight: normal;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+} */
